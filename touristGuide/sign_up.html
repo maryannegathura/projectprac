@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: larger;
+      background-image: url(pictures/beach.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      width: 90%;
+      margin: auto;
+    }
+
+    header nav {
+      width: 100%;
+      height: 10%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    header nav ul li {
+      padding: 3px 15px;
+    }
+
+    header nav ul li:nth-last-child(1) {
+      background: rgb(87, 102, 143);
+      border-radius: 20px;
+      padding: 5px 20px;
+      color: azure;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: rgb(9, 71, 124);
+      font-size: 13px;
+      font-weight: 500;
+      transition: .3s linear;
+    }
+
+    header nav ul li a:hover {
+      color: rgb(33, 7, 73);
+    }
+
+    #container {
+      width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgb(137, 171, 184);
+      height: 60%;
+      border-radius: 50px;
+      box-shadow: 0 0 10px rgba(9, 152, 165, 0.1);
+    }
+
+    /* Additional styling for the form */
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #3f50e4;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px; /* Increase font size for better visibility */
+    }
+
+    button:hover {
+      background-color: #17a6a6;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h4>Login Page</h4>
+      <ul>
+        <li><a href="index.html">homepage</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="container">
+    <h2>Sign Up for Tourist Account</h2>
+    
+    <form action="destination.html" method="post">
+      <label for="Fullname">Full Name:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" required>
+
+      <button type="submit">Sign Up</button>
+      <a href="register.php"> Don't have an account? Click here to register</a>
+      
+    </form>
+  </div>
+</body>
+</html>
+
+
